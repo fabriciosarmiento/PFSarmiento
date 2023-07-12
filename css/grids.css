@@ -1,0 +1,152 @@
+/*GRILLAS INDEX*/
+
+
+/*FOOTER*/
+.grid{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: (4,1fr);
+    grid-template-rows: 50px;
+    column-gap: 20px;
+    padding: 50px;
+    margin-top: 50px;
+    grid-template-areas:
+    "barra mapa datos iconos"
+
+}
+
+.barra{
+    grid-area: barra;
+}
+.mapa{
+    grid-area: mapa;
+}
+.datos{
+    grid-area: datos
+}
+.iconos{
+    grid-area: iconos;
+}
+/*FINAL DE FOOTER*/
+
+/*MUESTRA DE FOTOS GALERIA*/
+ .fotogaleria{
+    display: grid;
+    justify-content: space-between;
+    column-gap: 0px;
+    margin-left: 100px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas:
+    "a b c d ";
+    
+ }
+
+.a{
+    grid-area: a;
+}
+.b{
+    grid-area: b;
+}
+.c{
+    grid-area: c;
+}
+.d{
+    grid-area: d;
+}
+
+
+
+
+
+ /*FINAL DE FOTOS GALERIA*/
+
+
+ /*FOTOS DE CLASES*/
+ .fotoclase{
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(3,1fr);
+    width: 200px;
+    height: 200px;
+    margin-left: 100px;
+}
+
+
+.profesoras{
+    display:flex;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+
+
+
+/*FINAL FOTOS DE CLASE*/
+
+/*VIDEO + TEXTO*/
+.presentacion{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 60px;
+    margin: 100px 50px;
+    grid-template-areas: 
+    "video1 titulo1 titulo1";
+}
+.video1{
+    grid-area: video1;
+}
+.titulo1{
+    grid-area: titulo1;
+}
+/*FINAL VIDEO + TEXTO*/ 
+
+
+
+
+/*FINAL GRILLAS INDEX*/
+
+/*GRILLAS NOSOTROS*/
+.nos{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 150px);
+    row-gap: 100px;
+    column-gap: 100px;
+    grid-template-areas: 
+    "sole pianca vale"
+    "mara zara paula";
+}
+.sole{
+    grid-area: sole;
+}
+.pianca{
+    grid-area: pianca;
+}
+.vale{
+    grid-area: vale;
+}
+.mara{
+    grid-area: mara;
+}
+.zara{
+    grid-area: zara;
+}
+.paula{
+    grid-area: paula;
+}
+
+.nos div img{
+    display: flex;
+    justify-content: space-evenly;
+    width: 150px;
+    height: 150px;
+}
+
+
+
+
+@media (max-width: 400px) {
+    .bara-nav{
+        background-color: #fff;
+    }
+    
+}

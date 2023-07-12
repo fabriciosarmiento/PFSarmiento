@@ -1,0 +1,178 @@
+/*ESTILOS PARA PAGINA INDEX*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*estilos del header*/
+header.cabecer
+/*fin de estilos del header*/
+
+
+/*estilos de barra de navegacion*/
+nav.barra-nav{
+    position: sticky;
+    top: 0;
+ 
+}
+.barra-nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffde59;
+}
+
+.barra-nav ul li{
+
+    background-color: #ffde59;
+    text-align: center;
+    padding: 20px;
+    margin: 5px;
+    list-style: none;
+}
+
+.barra-nav li a{
+    color: #501f92;
+}
+
+
+#checkbox-menu, label.menu{
+    display: none;
+}
+
+ 
+
+
+/*fin de estilos de barra de navegacion*/
+
+
+/*estilos del body*/
+body{
+    font-family: 'Bebas Neue', sans-serif;
+}
+body.fondo{
+    background-color:rgb(241, 241, 196)
+}
+
+.imagen{
+    width: 200px;
+    height: 200px;
+}
+
+
+.Titulos{
+    color: #501f92;
+    font-size: 40px;
+}
+
+.video-principal{
+    width: 300px;
+    height: 300px;
+}
+div.Nuestras-clases{
+    text-align: center;
+}
+
+.fotogaleria img{
+    width: 200px;
+    height: 200px;
+}
+
+    /*estilos del footer*/
+
+
+.mapa{
+    width: 400px;
+    height: 150px;
+}
+a{
+    text-decoration: none;
+    color: #501f92;
+}
+
+li.color{
+    color: #501f92;
+}
+p.color{
+    color: #ffde59;
+}
+div ul.puntos{
+    list-style: none;
+}
+
+/*FIN DE ESTILOS PAGINA INDEX*/
+
+/*ESTILOS PARA PAGINA NOSOTROS*/
+
+.titulonosotros{
+    color: #501f92;
+    display: grid;
+    justify-content: center;
+    padding: 40px; 
+    font-size: 3rem;
+}
+.subtitulonosotros{
+    color: #501f92;
+    display: grid;
+    justify-content: center; 
+}
+
+.profes div street1{
+    width: 100px;
+    height: 100px;
+}
+
+div .bx{
+    font-size: 50px;
+    color: #501f92;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:576px) {
+
+    .barra-nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        background-color: #ffde59;
+
+    }
+    label.menu{
+        display: block;
+        font-size: 1.3rem;
+    }
+
+    #checkbox-menu:checked ~ ul{
+        display: block;
+    }
+  .grid ul{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .presentacion{
+    display: flex;
+  }
+
+}
