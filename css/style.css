@@ -1,178 +1,167 @@
-/*ESTILOS PARA PAGINA INDEX*/
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
 }
 
-/*estilos del header*/
-header.cabecer
-/*fin de estilos del header*/
-
-
-/*estilos de barra de navegacion*/
-nav.barra-nav{
-    position: sticky;
-    top: 0;
- 
+/*ESTILOS BARRA NAV TODAS*/
+nav.barra-nav {
+  position: sticky;
+  top: 0;
 }
-.barra-nav ul{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #ffde59;
+nav.barra-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ffde59;
 }
-
-.barra-nav ul li{
-
-    background-color: #ffde59;
-    text-align: center;
-    padding: 20px;
-    margin: 5px;
-    list-style: none;
+nav.barra-nav li {
+  background-color: #ffde59;
+  text-align: center;
+  padding: 20px;
+  margin: 5px;
+  list-style: none;
 }
-
-.barra-nav li a{
-    color: #501f92;
+nav.barra-nav a {
+  color: #501f92;
+  text-decoration: none;
+}
+nav.barra-nav #checkbox-menu, nav.barra-nav label.menu {
+  display: none;
 }
 
+/*FIN ESTILOS BARRA NAV*/
+/*FUENTE DEL BODY TODOS*/
+body {
+  font-family: "Bebas Neue", sans-serif;
+  background-color: rgb(247, 247, 198);
+}
 
-#checkbox-menu, label.menu{
+/*ESTILOS PAGINA INDEX*/
+.Titulos {
+  color: #501f92;
+  font-size: 40px;
+}
+
+.video-principal {
+  width: 300px;
+  height: 300px;
+}
+
+div.Nuestras-clases {
+  text-align: center;
+  padding: 50px;
+}
+
+div .imagen {
+  width: 200px;
+  height: 200px;
+}
+div p {
+  text-align: center;
+  color: black;
+}
+
+section.fotogaleria {
+  padding: 50px;
+}
+section.fotogaleria img {
+  width: 200px;
+  height: 200px;
+}
+
+div img.d-block {
+  height: 550px;
+  width: 100px;
+}
+
+/*ESTILOS FOOTER TODOS*/
+footer ul {
+  list-style: none;
+}
+footer li {
+  color: #501f92;
+}
+footer a {
+  text-decoration: none;
+  color: #501f92;
+}
+footer .mapa {
+  width: 400px;
+  height: 150px;
+}
+footer i {
+  font-size: 50px;
+  color: #501f92;
+}
+
+/*ESTILOS PARA NOSOTROS*/
+section.titulonos h1 {
+  color: #501f92;
+  display: grid;
+  justify-content: center;
+  padding: 40px;
+  font-size: 3rem;
+}
+section.titulonos p {
+  color: black;
+  display: grid;
+  justify-content: center;
+  margin-left: 50px;
+}
+
+div.nombreprofes {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+
+/*ESTILOS CLASES*/
+h2.clases {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  color: #ffde59;
+}
+
+section.row {
+  border: 1px solid;
+  padding: 50px;
+  justify-content: space-evenly;
+}
+
+section.preguntas {
+  /*border: 1px solid;*/
+  padding: 30px;
+  justify-content: center;
+}
+section.preguntas h2 {
+  text-align: center;
+  padding: 20px;
+}
+section.preguntas div {
+  text-align: center;
+  padding: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .barra-nav ul {
     display: none;
-}
-
- 
-
-
-/*fin de estilos de barra de navegacion*/
-
-
-/*estilos del body*/
-body{
-    font-family: 'Bebas Neue', sans-serif;
-}
-body.fondo{
-    background-color:rgb(241, 241, 196)
-}
-
-.imagen{
-    width: 200px;
-    height: 200px;
-}
-
-
-.Titulos{
-    color: #501f92;
-    font-size: 40px;
-}
-
-.video-principal{
-    width: 300px;
-    height: 300px;
-}
-div.Nuestras-clases{
-    text-align: center;
-}
-
-.fotogaleria img{
-    width: 200px;
-    height: 200px;
-}
-
-    /*estilos del footer*/
-
-
-.mapa{
-    width: 400px;
-    height: 150px;
-}
-a{
-    text-decoration: none;
-    color: #501f92;
-}
-
-li.color{
-    color: #501f92;
-}
-p.color{
-    color: #ffde59;
-}
-div ul.puntos{
-    list-style: none;
-}
-
-/*FIN DE ESTILOS PAGINA INDEX*/
-
-/*ESTILOS PARA PAGINA NOSOTROS*/
-
-.titulonosotros{
-    color: #501f92;
-    display: grid;
-    justify-content: center;
-    padding: 40px; 
-    font-size: 3rem;
-}
-.subtitulonosotros{
-    color: #501f92;
-    display: grid;
-    justify-content: center; 
-}
-
-.profes div street1{
-    width: 100px;
-    height: 100px;
-}
-
-div .bx{
-    font-size: 50px;
-    color: #501f92;
-    display: flex;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width:576px) {
-
-    .barra-nav ul {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 50px;
-        background-color: #ffde59;
-
-    }
-    label.menu{
-        display: block;
-        font-size: 1.3rem;
-    }
-
-    #checkbox-menu:checked ~ ul{
-        display: block;
-    }
-  .grid ul{
-    display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    background-color: #ffde59;
   }
-
-  .presentacion{
-    display: flex;
+  .barra-nav ul label.menu {
+    display: block;
+    font-size: 1.3rem;
   }
-
+  .barra-nav ul #checkbox-menu:checked ~ ul {
+    display: block;
+  }
+  footer {
+    flex-direction: column;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*ESTILOS BARRA NAV TODAS*/
+nav.barra-nav{
+    position: sticky;
+    top: 0;
+   ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffde59;
+   } 
+   li{
+    background-color: #ffde59;
+    text-align: center;
+    padding: 20px;
+    margin: 5px;
+    list-style: none;
+   }
+   a{
+    color: #501f92;
+    text-decoration: none;
+
+   }
+   #checkbox-menu, label.menu{
+    display: none;
+   }
+
+}
+/*FIN ESTILOS BARRA NAV*/
+
+/*FUENTE DEL BODY TODOS*/
+body{
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: rgb(247, 247, 198);
+}
+
+
+/*ESTILOS PAGINA INDEX*/
+
+.Titulos{
+    color: #501f92;
+    font-size: 40px;
+}
+
+.video-principal{
+    width: 300px;
+    height: 300px;
+}
+
+div.Nuestras-clases{
+    text-align: center;
+    padding: 50px;
+}
+div{
+    .imagen{
+    width: 200px;
+    height: 200px;
+}
+    p{
+    text-align: center;
+    color: black;
+}
+}
+
+section.fotogaleria{
+    padding: 50px;
+
+    img{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+div{
+    img.d-block{
+        height: 550px;
+        width: 100px;
+    }
+}
+
+
+
+
+
+/*ESTILOS FOOTER TODOS*/
+footer{
+    ul{
+        list-style: none;
+    }
+    li{
+        color: #501f92;
+    }
+    a{
+        text-decoration: none;
+        color: #501f92;
+    }
+    .mapa{
+        width: 400px;
+        height: 150px;
+    }
+    i{
+        font-size: 50px;
+        color:#501f92
+    }
+
+}
+
+
+/*ESTILOS PARA NOSOTROS*/
+section.titulonos{
+    h1{
+        color: #501f92;
+        display: grid;
+        justify-content: center;
+        padding: 40px; 
+        font-size: 3rem;
+    }
+    p{
+        color: black;
+        display: grid;
+        justify-content: center; 
+        margin-left: 50px;
+    }
+}
+
+div.nombreprofes{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+
+
+
+
+/*ESTILOS CLASES*/
+
+h2.clases{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: #ffde59;
+}
+
+section.row{
+    border: 1px solid;
+    padding: 50px;
+    justify-content: space-evenly;
+}
+section.preguntas{
+    /*border: 1px solid;*/
+    padding: 30px;
+    justify-content: center;
+
+    h2{
+        text-align: center;
+        padding: 20px;
+    }
+
+    div{
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:576px) {
+
+    .barra-nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        background-color: #ffde59;
+
+        label.menu{
+            display: block;
+            font-size: 1.3rem;
+        }
+
+        #checkbox-menu:checked ~ ul{
+            display: block;
+        }
+
+    }
+
+
+    footer{
+        flex-direction: column;
+    }
+    }
