@@ -144,7 +144,28 @@ section.preguntas div {
   padding: 20px;
 }
 
-@media screen and (max-width: 576px) {
+/*ESTILOS GALERIA*/
+main.padre section {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+main.padre h3 {
+  text-align: center;
+  color: #bc40fb;
+}
+main.padre img {
+  width: 180px;
+  height: 180px;
+}
+
+/*ESTILOS CONTACTO*/
+div.dudas {
+  color: #501f92;
+}
+
+@media screen and (max-width: 360px) {
   .barra-nav ul {
     display: none;
     flex-direction: column;
@@ -159,7 +180,12 @@ section.preguntas div {
   .barra-nav ul #checkbox-menu:checked ~ ul {
     display: block;
   }
-  footer {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer {
+    display: flex;
     flex-direction: column;
   }
 }

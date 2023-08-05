@@ -169,12 +169,38 @@ section.preguntas{
 
 
 
+/*ESTILOS GALERIA*/
+main.padre{
+    section{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 50px;
+    }
+  
+    h3{
+        text-align: center;
+        color: #bc40fb;
+    }
+    img{
+        width: 180px;
+        height: 180px;
+    }
+}
+
+
+/*ESTILOS CONTACTO*/
+div.dudas{
+    color: #501f92;
+}
 
 
 
 
 
-@media screen and (max-width:576px) {
+
+
+@media screen and (max-width:360px) {
 
     .barra-nav ul {
         display: none;
@@ -194,8 +220,14 @@ section.preguntas{
 
     }
 
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
 
-    footer{
+
+    .footer{
+        display: flex;
         flex-direction: column;
     }
     }
