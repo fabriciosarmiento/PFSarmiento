@@ -26,7 +26,7 @@ nav.barra-nav{
     text-decoration: none;
 
    }
-   #checkbox-menu, label.menu{
+    #checkbox-menu, label.menu{
     display: none;
    }
 
@@ -65,6 +65,9 @@ div{
     text-align: center;
     color: black;
 }
+}
+section.presetacion{
+    width: 100%;
 }
 
 section.fotogaleria{
@@ -200,33 +203,41 @@ div.dudas{
 
 
 
-@media screen and (max-width:360px) {
+@media screen and (max-width:600px) {
 
-    .barra-nav ul {
+    .barra-nav ul{
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 50px;
         background-color: #ffde59;
 
         label.menu{
             display: block;
+            position: relative;
             font-size: 1.3rem;
         }
 
-        #checkbox-menu:checked ~ ul{
+        #checkbox-menu:checked ~ .ul{
             display: block;
         }
 
     }
 
-    .main{
+    main.padre{
         display: flex;
         flex-direction: column;
     }
 
+    section.presentacion{
+        display: block;
+    }
 
-    .footer{
+    section.fotogaleria{
+        display: block;
+    }
+
+
+    footer.grid{
         display: flex;
         flex-direction: column;
     }
