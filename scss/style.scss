@@ -5,32 +5,41 @@
 }
 
 /*ESTILOS BARRA NAV TODAS*/
-nav.barra-nav{
-    position: sticky;
-    top: 0;
-   ul{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #ffde59;
-   } 
-   li{
-    background-color: #ffde59;
-    text-align: center;
-    padding: 20px;
-    margin: 5px;
-    list-style: none;
-   }
-   a{
-    color: #501f92;
-    text-decoration: none;
+.nav-wrapper{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
 
-   }
-    #checkbox-menu, label.menu{
-    display: none;
-   }
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#ffde59;
+    padding: 1rem 1.5rem;
+    border-radius: 0.4rem;
+    box-shadow: 5px 5px 5px grey;
+}
+
+nav .logo{
+    font-weight: 700;
 
 }
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+nav a {
+    text-decoration: none;
+    color:#501f92;
+}
+nav #toggle, nav label{
+    display: none;
+}
+
 /*FIN ESTILOS BARRA NAV*/
 
 /*FUENTE DEL BODY TODOS*/
@@ -201,44 +210,42 @@ div.dudas{
 
 
 
-
-
-@media screen and (max-width:600px) {
-
-    .barra-nav ul{
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        background-color: #ffde59;
-
-        label.menu{
-            display: block;
-            position: relative;
-            font-size: 1.3rem;
+    @media (max-width:40.625em){
+        nav .menu{
+            width:100%;
+            height: 0;
+            overflow: hidden;
+        }
+        nav ul{
+            flex-direction: column;
+            align-items: center;
+            padding: 0.5rem 0 ;
+        }
+        nav label{
+            display: inline-flex;
+            color: white;
+            cursor: pointer;
+        }
+        nav #toggle:checked ~ .menu{
+            height: 100%;
         }
 
-        #checkbox-menu:checked ~ .ul{
+        main.padre{
+            display: flex;
+            flex-direction: column;
+        }
+    
+        section.presentacion{
             display: block;
         }
-
-    }
-
-    main.padre{
-        display: flex;
-        flex-direction: column;
-    }
-
-    section.presentacion{
-        display: block;
-    }
-
-    section.fotogaleria{
-        display: block;
-    }
-
-
-    footer.grid{
-        display: flex;
-        flex-direction: column;
-    }
+    
+        section.fotogaleria{
+            display: block;
+        }
+    
+    
+        footer.grid{
+            display: flex;
+            flex-direction: column;
+        }
     }
